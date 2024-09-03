@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1920px;
+  margin: 20px;
+  background-color: #d7d7d7;
+}

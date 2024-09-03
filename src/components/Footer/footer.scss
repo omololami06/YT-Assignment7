@@ -1,0 +1,55 @@
+@import "../Scss/includes";
+@import "../Scss/extend";
+@import "../Scss/variables";
+
+#Footer {
+  .section {
+    overflow: hidden;
+
+    .footer {
+      width: 100%;
+      height: 40vh;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 80px;
+    }
+
+    #footer-logo {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 18.29px;
+      letter-spacing: 0.1854em;
+      text-align: center;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .footer p {
+      font-family: "Nunito", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24.55px;
+      margin-top: 40px;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    #arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

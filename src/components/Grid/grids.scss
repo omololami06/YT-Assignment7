@@ -1,0 +1,108 @@
+@import "../Scss/includes";
+@import "../Scss/extend";
+@import "../Scss/variables";
+
+#Grid {
+  //   background: $background-color;
+
+  @include anyScreen(992px) {
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 1920px;
+    }
+
+    .section .container {
+      //   width: 100%;
+      height: auto;
+      overflow: hidden;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .container.img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-sizing: border-box;
+    }
+  }
+
+  .section {
+    overflow: hidden;
+    @extend .grid;
+    min-height: 802px;
+    gap: 0px;
+
+    .container {
+      @extend .grid1;
+      padding-bottom: 0px;
+      gap: 0px;
+
+      .container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        box-sizing: border-box;
+      }
+
+      .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        padding: 20px;
+        box-sizing: border-box;
+
+        p:nth-child(1),
+        p:nth-child(2),
+        p:nth-child(3) {
+          @extend .inn;
+        }
+
+        p:nth-child(1) {
+          @extend .child1;
+        }
+        p:nth-child(2) {
+          @extend .child2;
+        }
+        p:nth-child(3) {
+          @extend .child3;
+        }
+
+        .demo {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+
+          span {
+            @extend .mont12;
+          }
+        }
+      }
+    }
+  }
+
+  .othersp {
+    border: 3px solid black;
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

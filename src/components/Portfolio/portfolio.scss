@@ -1,0 +1,62 @@
+@import "../Scss/includes";
+@import "../Scss/extend";
+@import "../Scss/variables";
+
+#Portfolio {
+  @include anyScreen(992px) {
+    #img1 h5 {
+      //   width: 200px;
+      width: 210px;
+      height: 85px;
+    }
+
+    // .nav {
+    //   width: 337px;
+    //   height: 98px;
+    // }
+  }
+
+  .section {
+    overflow: hidden;
+
+    #img1 {
+      width: 100%;
+      height: 250px;
+      text-align: center;
+      background-image: url(../../assets/images/img1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    #img1 h5 {
+      @extend .mont30;
+      text-align: center;
+      border: 8px solid black;
+      width: 400px;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nav {
+      @include flex-center;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 90px;
+      border: 4px;
+      background-color: black;
+    }
+
+    .nav .box {
+      margin-top: 25vh;
+      width: 200px;
+      height: 200px;
+      color: white;
+      // text-decoration: none;
+      // text-align: center;
+    }
+  }
+}

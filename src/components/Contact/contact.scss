@@ -1,0 +1,82 @@
+@import "../Scss/includes";
+@import "../Scss/extend";
+@import "../Scss/variables";
+
+#Contact {
+  background: $background-color;
+
+  .section {
+    overflow: hidden;
+
+    .info {
+      // max-width: 1560px;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      border-top: 72px;
+
+      p {
+        width: 400px;
+      }
+
+      p:nth-child(2) {
+        @extend .width700;
+      }
+
+      .contact {
+        @extend .width300;
+      }
+      h3 {
+        @extend .mont30;
+      }
+
+      form {
+        width: 100%;
+        margin-top: 100px;
+        align-items: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+
+      input[type="text"],
+      select {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-style: normal;
+      }
+      input[type="number"],
+      select {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid black;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        width: 20%;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.5px;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+
+      #message {
+        height: 20vh;
+      }
+    }
+  }
+}
