@@ -11,6 +11,12 @@
   @include background("../../assets/images/rectangle 67.png");
 
   @include anyScreen(992px) {
+    background-image: url(../../assets/images/backgroundimage.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+
     .section {
       nav {
         .logo {
@@ -57,12 +63,6 @@
       line-height: 39.01px;
       margin-bottom: 10px;
     }
-
-    background-image: url(../../assets/images/backgroundimage.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 800px;
   }
 
   .section {
