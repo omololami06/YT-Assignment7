@@ -8,7 +8,7 @@
 
   //   @extend .width100;
   background-color: $background-color;
-  @include background("../../assets/images/rectangle 67.png");
+  @include background("../../assets/images/Rectangle 67.png");
 
   @include anyScreen(992px) {
     background-image: url(../../assets/images/backgroundimage.png);
