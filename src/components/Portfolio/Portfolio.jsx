@@ -1,5 +1,5 @@
 import React from "react";
-import "./portfolio.scss";
+import "./Portfolio.scss";
 
 const Portfolio = () => {
   return (

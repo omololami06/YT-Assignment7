@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.scss";
+import "./Footer.scss";
 import arrow from "../../assets/images/arrow.svg";
 import fb from "../../assets/images/fb.svg";
 import linkedinfooter from "../../assets/images/linkedinfooter.svg";

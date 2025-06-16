@@ -1,5 +1,6 @@
 import React from "react";
-import "./contact.scss";
+import "./Contact.scss";
+import lines from "../../assets/images/lines.svg";
 const Contact = () => {
   return (
     <div id="Contact">
@@ -14,7 +15,7 @@ const Contact = () => {
             quis libero viverra facilisis ut ac est.
           </p>
           <div id="seperator">
-            <img src="images/lines.svg" alt="seperator" />
+            <img src={lines} alt="seperator" />
           </div>
           <form>
             <label for="name">ENTER YOUR NAME*</label>

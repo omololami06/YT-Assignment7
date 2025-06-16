@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.scss";
+import "./About.scss";
 import design from "../../assets/images/design.svg";
 import development from "../../assets/images/development.svg";
 import maintenance from "../../assets/images/maintenance.svg";

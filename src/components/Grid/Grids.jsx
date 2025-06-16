@@ -1,5 +1,5 @@
 import React from "react";
-import "./grids.scss";
+import "./Grids.scss";
 import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";

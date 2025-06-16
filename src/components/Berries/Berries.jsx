@@ -1,5 +1,5 @@
 import React from "react";
-import "./berries.scss";
+import "./Berries.scss";
 
 const Berries = () => {
   function handleClick() {

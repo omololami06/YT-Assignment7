@@ -1,5 +1,5 @@
 import React from "react";
-import "./profile.scss";
+import "./Profile.scss";
 import logo from "../../assets/logo.svg";
 import hamburger from "../../assets/images/hamburger.svg";
 import mSeparator from "../../assets/images/mSeparator.svg";
@@ -20,14 +20,39 @@ const Profile = () => {
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
+
+          {/*desktop links */}
           <div className="links">
-            <a href="">About me</a>
+            <a href="#About">About me</a>
             <a href="">Skills</a>
-            <a href="">Portfolio</a>
-            <a id="contact-me" href="">
+            <a href="#Portfolio">Portfolio</a>
+            <a id="contact-me" href="#Contact">
               CONTACT ME
             </a>
           </div>
+
+          {/*mobile nav */}
+
+          {/* <div className="mobile-nav"> */}
+          <div className="mobile-logo mobile-nav">
+            <img src={moviewlogo} alt="logo" />
+          </div>
+
+          <div className="mobile-nav">
+            <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+
+            <label htmlFor="menu-toggle" className="menu-icon">
+              <img src={hamburger} alt="Menu" />
+            </label>
+
+            <div className="mobile-links">
+              <a href="#About">About me</a>
+              <a href="#Skills">Skills</a>
+              <a href="#Portfolio">Portfolio</a>
+              <a href="#Contact">CONTACT ME</a>
+            </div>
+          </div>
+          {/* </div> */}
         </nav>
 
         <div className="hero">
@@ -44,20 +69,6 @@ const Profile = () => {
           </div>
           <div className="photo">
             <img src={image} alt="A young man" />
-          </div>
-        </div>
-
-        <div className="links-two">
-          <div>
-            <span>
-              <img src={moviewlogo} alt="Menu" />
-            </span>
-          </div>
-
-          <div>
-            <span>
-              <img src={hamburger} alt="Menu" />
-            </span>
           </div>
         </div>
 
